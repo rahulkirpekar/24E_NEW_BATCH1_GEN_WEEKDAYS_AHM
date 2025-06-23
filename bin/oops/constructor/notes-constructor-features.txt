@@ -1,0 +1,49 @@
+
+Features of Constructor
+***************************
+1.Constructor Name
+Must have the same name as the class.
+
+No return type (not even void).
+
+2.Types of Constructors
+Default Constructor (no arguments)
+
+Parameterized Constructor (with arguments)
+
+3.Automatic Default Constructor
+If no constructor is defined, Java automatically provides a default constructor.
+
+4.Constructor Overloading
+Multiple constructors can be defined in a class with different parameter lists.
+
+5.Cannot Be Abstract, Static, Final or Synchronized
+Constructors cannot be declared as abstract, static, final, or synchronized.
+
+6.Used for Object Initialization
+Primary purpose: initialize instance variables when object is created.
+
+7.Can Call Other Constructors Using this()
+Used for constructor chaining within the same class.
+
+this() must be the first statement in the constructor.
+
+8.Can Call Superclass Constructor Using super()
+Used to invoke parent class constructor.
+
+super() must be the first statement if used.
+
+9.Inheritance Behavior
+Constructors are not inherited, but subclass constructors can call superclass constructors.
+
+10.Access Modifiers Allowed
+Can have access modifiers: public, private, protected, or default (package-private).
+
+11.Private Constructors
+Can restrict object creation (used in Singleton Pattern).
+
+12.Constructor Execution
+Always executes automatically when an object is created using new.
+
+13.Cannot Be Called Directly
+Called automatically during object creation; cannot call like a regular method.
