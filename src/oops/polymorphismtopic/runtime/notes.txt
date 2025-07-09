@@ -1,0 +1,15 @@
+			Person(getBehave()---Human)
+			  |
+	-------------------------------------
+	|		  |		    |		 
+     School             Org               Home
+    getResult()        getSalary()       getMovieOnTime()
+	|		  |		    |
+    getBehave()         getBehave()      getBehave()		 
+      Student           Employee	  Child
+ 
+
+	// Upcasting
+	Person person = new School();		
+
+	person.getBehave();
