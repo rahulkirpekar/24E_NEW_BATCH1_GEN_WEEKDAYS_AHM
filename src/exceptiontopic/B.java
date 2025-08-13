@@ -21,12 +21,10 @@ but it can declare unchecked exception.
 	===> but cannot declare parent exception.
 
 */
-
-
 public class B extends A
 {
 	@Override
-	public void test1() throws Exception
+	public void test1() 
 	{
 		
 	}
