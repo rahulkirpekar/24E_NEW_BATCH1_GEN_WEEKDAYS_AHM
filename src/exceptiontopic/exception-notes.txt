@@ -1,0 +1,207 @@
+Exception:- Abnormal Scenarios.
+-----------
+
+	1. ArithmeticException
+		10 / 0; // ArithmeticException
+		
+	2. String name = null;
+		SOP(name.length());// NullPointerException
+
+	3. String value = "1a2";
+		int no =  Integer.parseInt(value);//NumberFormateException
+
+	4. int a[] = new int[5];
+		a[5] = 100;// ArrayIndexOutofBoundExcetion
+
+
+			//01234 
+	5. String name = "Royal";
+		SOP(name.charAt(5));// StringIndexOutofBoundExcetion 
+
+	6. 		A
+			|
+		------------------
+		|		|
+		B		C	
+
+		A obj = new B();
+		
+		C objc = (C)obj;// ClasscastException
+
+			Hierarchy of Exception
+			----------------------
+
+				Throwable
+				   |
+				Exception--(recoverable)--[Exception Handling]
+				   |
+		--------------------------------------------
+		|--checked				|--Unchecked(Runtime)			
+	 --IOException				  RuntimeException
+	 --SQLException					|
+	 --FileNotFoundException		--ArithmeticException	
+	 --ClassNotFoundException		--NullPointerException	
+						--StringIndexoutofBoundException	
+						--NumberFormateException
+						--ClassNotFoundException
+						--ClassCastException
+
+------------------------------------------------------------
+
+
+	try
+	{
+
+	}catch()
+	{
+
+	}
+	finally
+	{
+
+	}
+-----------------------------
+	try
+	{
+
+	}catch()
+	{
+
+	}catch()
+	{
+
+	}
+	finally
+	{
+
+	}
+-----------------------------
+	try
+	{
+
+	}
+	finally
+	{
+
+	}
+------------------------------------
+
+
+
+
+		throw
+		
+		throws
+
+
+In Java, throw and throws are related to exception handling, but they have different rules and purposes.
+Let’s break them down clearly:
+
+---
+
+## 1. throw keyword
+
+* Purpose: Used inside a method or block to actually throw a single exception object.
+* Rules:
+
+  1. You can throw only one exception at a time.
+  2. The object must be of type Throwable (or a subclass of it like Exception or Error).
+  3. throw is followed by an object, not a class.
+  4. Once an exception is thrown, the remaining code in that block is skipped until it is caught.
+  5. If you throw a checked exception, you must handle it using try-catch or declare it with throws in the method signature.
+* Syntax:
+
+  java
+  throw new ExceptionType("Error message");
+  
+
+Example:
+
+java
+public void checkAge(int age) {
+    if (age < 18) {
+        throw new IllegalArgumentException("Age must be 18 or above.");
+    }
+}
+
+
+---
+
+## 2. throws keyword
+
+* Purpose: Declares in the method signature which exceptions a method might throw.
+* Rules:
+
+  1. You can declare multiple exceptions separated by commas.
+  2. Used only for checked exceptions (not required for unchecked/runtime exceptions).
+  3. It does not throw the exception itself — it just tells the caller that the method might throw it.
+  4. If a method declares a checked exception using throws, the calling method must handle it or declare it too.
+  5. throws is followed by a class name (not an object).
+* Syntax:
+
+  java
+  returnType methodName(parameters) throws ExceptionType1, ExceptionType2
+  
+
+Example:
+
+java
+public void readFile(String fileName) throws IOException {
+    FileReader fr = new FileReader(fileName);
+}
+
+
+---
+
+## 3. Key Differences Table
+
+| Feature                   | throw                      | throws                             |
+| ------------------------- | ---------------------------- | ------------------------------------ |
+| Meaning               | Actually throws an exception | Declares possible exceptions         |
+| Used inside / outside | Inside method or block       | Method signature                     |
+| Follows               | An object of Throwable | A class name of exception        |
+| Number allowed        | One exception at a time      | Multiple exceptions separated by , |
+| Checked exception use | Must handle or declare       | Must be declared in signature        |
+
+---
+
+✅ Quick Memory Tip:
+
+* throw → "Act of throwing" (object)
+* throws → "Promise that I might throw" (class)
+
+---
+
+
+
+
+
+
+
+
+	
+
+  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+
+
+
+
+
+			Person(getBehave())
+			  |
+	-----------------------------------------
+	|		  |			|
+      School		Org		       Home		
+	|		  |			|
+    getBehave()       getBehave()            getBehave()
+	|		  |			|
+     Student          Employee                Child
