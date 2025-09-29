@@ -1,0 +1,61 @@
+JDBC:-	Java Database Connectivity
+------
+	1. Database Connection
+	------------------------
+		|
+	2. SQL queries execute
+
+	JavaProgram----connect------>Database
+---------------------------------------------------------------------------------------------------------------------
+
+	src
+	 |
+	---jdbctopic
+	     |	
+		---bean
+		---dao
+		---util
+
+
+
+
+
+
+
+
+		MySQL				Oracle
+		 |				  |	
+	  mysql-connector.jar(jdbc jar)		odbc.jar(jar)
+		 |				 |
+	    Driver.class			Driver.class
+
+	1. URLNAME-----jdbc:mysql://localhost:3306/database
+	2. DRIVERCLASS-com.mysql.cj.jdbc.Driver
+	3. USERNAME----root
+	4. PASSWORD----root	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
