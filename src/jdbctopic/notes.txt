@@ -1,0 +1,56 @@
+JDBC:- Java to database Connectivity
+-----
+
+	
+	MySQL		Oracle		MongoDB
+	  |		  |		   |
+  mysql-connector.jar	odbc.jar	 *.jar	
+	  |		  |		   |
+     Driver.class    Driver.class      Driver.class
+----------------------------------------------------------------------
+	1.URLNAME = "jdbc:mysql://localhost:3306/databaseName";
+	2.DRIVERCLASS="com.mysql.cj.jdbc.Driver";
+	3.USERNAME="root";
+	4.PASSWORD="root";
+----------------------------------------------------------------------
+
+
+
+
+
+	com
+	 |
+	---jdbctopic
+		|
+		--bean
+		--dao
+		--util
+		   |
+		   ---DBConnection.java
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,21 @@
+MySQL Database Queries
+-------------------------
+1. show databases
+2. create database genweekdays24;
+3. use genweekdays24;
+4. 
+	CREATE TABLE student
+	(
+		rno int PRIMARY KEY AUTO_INCREMENT,
+		name varchar(50),
+		std int,
+		marks int 
+	);
+
+
+5. show tables;
+6. desc student;
+7. select * from student;
+8. INSERT INTO student(name,std,marks) VALUES('rahul',12,100)
+9. update
+10. delete
